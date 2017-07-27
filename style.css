@@ -1,13 +1,6 @@
-#index body {
-	background-image: url(header.image.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
 body {
 	background-color: OldLace;
+	font-family: "Lora";
 }
 
 .container h1 {
@@ -15,9 +8,9 @@ body {
 	color: purple;
 	text-decoration: none;
 	text-transform: uppercase;
-	line-height: .15;
-	font-family: "Courier New", monospace;
-	font-size: 5.5em;
+	line-height: .45;
+	font-family: "Bentham", monospace;
+	font-size: 5.0em;
 }
 
 a {
@@ -28,8 +21,8 @@ a {
 #topnav {
 	width: 100%;
 	display: inline-block;
-	margin: 0 0 3em 0;
-	padding: 0;
+	margin: -10px -20px;
+	padding: -20px -20px;
 	list-style: none;
 	background-color: none;
 	overflow: hidden;
@@ -48,7 +41,7 @@ a {
 	color: #411647;
 	text-decoration: none;
 	font-size: 17px;
-	font-family: "Arial", monospace;
+	font-family: "GoldenRatio", monospace;
 	padding: 8px 15px;
 }
 
@@ -61,7 +54,7 @@ a {
 }
 
 footer {
-	position: absolute;
+	position: relative;
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -69,14 +62,30 @@ footer {
 	overflow: hidden;
 	text-align: center;
 	color: #411647;
-	font-size: 17px;
-	font-family: "Arial", monospace;
+	font-size: 15px;
+	font-family: "GoldenRatio", monospace;
+	display: inline-block;
+}
+
+footer div {
+	display: inline-block;
+	text-align: center;
+	padding-left: 30px;
+
+}
+
+#phone {
+	color: Sienna;
+}
+
+#email a:hover {
+	color: Steelblue;
 }
 
 #top {
 	text-align: center;
 	color: #411647;
-	font-family: "Arial", monospace;
+	font-family: "GoldenRatio", monospace;
 	line-height: 0;
 	font-size: 3em;
 }
@@ -87,6 +96,7 @@ footer {
 	padding: 16px;
 	font-size: 16px;
 	border: none;
+	font-family: "GoldenRatio";
 }
 
 .dropdown li {
@@ -105,9 +115,11 @@ footer {
 
 .dropdown-content a {
 	color: blue;
+	background-color: OldLace;
 	padding: 12px 16px;
 	text-decoration: none;
-	display: block; 
+	display: block;
+	z-index: 1; 
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1;}
@@ -120,6 +132,179 @@ footer {
 	background-color: BurlyWood;
 }
 
+.content {
+	color: black;
+	background: white;
+	width: 90%;
+	height: 400px;
+	margin: 40px ;
+	padding: 20px;
+	position: relative;
+	vertical-align: middle;
+
+}
+
+.content p {
+	color: #black;
+	text-align: center;
+}
+
+.content img {
+	height: 300px;
+	width: 300px;
+}
+
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+img {
+  width: 20%;
+  height: auto;
+	padding: 5px;
+}
+
+h2 {
+  text-align:center;
+	padding-bottom: 1em;
+}
+
+.slick-dots {
+	text-align: center;
+  	margin: 0 0 10px 0;
+  	padding: 0;
+  }
+
+ li {
+    display:inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+ }   
+ 
+ &.slick-active {
+      button-2 {
+        background-color:black;
+      }
+    }
+  button-2 {
+      font: 0/0 a;
+      text-shadow: none;
+      color: transparent;
+      background-color:#999;
+      border:none;
+      width: 15px;
+      height: 15px;
+      border-radius:50%;
+    }
+	
+	button-2:hover{
+		background-color: black;
+	}
+ 
+/* Custom Arrow */
+.prev{
+	color: #999;
+	position: absolute;
+	top: 38%;
+	left: -2em;
+	font-size: 1.5em;
+}
+
+.prev:hover{
+			cursor: pointer;
+			color: black;
+		}
+
+.next{
+	color: #999;
+	position: absolute;
+	top: 38%;
+	right: -2em;
+	font-size: 1.5em;
+}
+.next:hover{
+	cursor: pointer;
+	color: black;
+}
 
 
+@media screen and (max-width: 800px) {
+    .next {
+        display: none !important;
+    }
+}
 
+
+@font-face {
+	font-family: "BarQ";
+	src: url('Barq.ttf');
+}
+
+@font-face {
+	font-family: "Westmeath";
+	src: url('Westmeath.ttf');
+}
+
+@font-face {
+	font-family: "Portabell";
+	src: url('Portabell.ttf');
+}
+
+@font-face {
+	font-family: "Usuazi";
+	src: url('gomarice_usuazi_hosomozi.ttf');
+}
+
+@font-face {
+	font-family: "Bentham";
+	src: url('Bentham-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Tajamuka";
+	src: url('Tajamuka_Script.ttf');
+}
+
+@font-face {
+	font-family: "GoldenRatio";
+	src: url('GoldenRatio-Demo.ttf');
+}
+
+@font-face {
+	font-family: "Linguistics";
+	src: url('LiguisticsPro-Regular.otf');
+}
+
+@font-face {
+	font-family: "Adamina";
+	src: url('Adamina-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Poly";
+	src: url('Poly-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Flamenco-L";
+	src: url('Flamenco-Light.ttf');
+}
+
+@font-face {
+	font-family: "Flamenco-R";
+	src: url('Flamenco-Regular.ttf');
+}
+
+@font-face {
+	font-family: "LifeSavers-B";
+	src: url('LifeSavers-Bold.ttf');
+}
+
+@font-face {
+	font-family: "LifeSavers-R";
+	src: url('LifeSavers-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Lora";
+	src: url('Lora-Regular.ttf');
+}
